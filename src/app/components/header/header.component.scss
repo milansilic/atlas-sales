@@ -1,0 +1,26 @@
+header { border: px solid dodgerblue;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #eee;
+}
+
+picture { border: px solid red;
+   
+   img {border: px solid pink;
+      display: block;
+      width: 100%;
+      transform: translate(-0.8rem, .3rem);
+   }
+}
+
+ul {
+   display: flex;
+}
+
+li { border: px solid dodgerblue;
+   padding: 1.2vh 1vw;
+   text-align: center;
+   font-size: 1.4rem;
+   cursor: pointer;
+}

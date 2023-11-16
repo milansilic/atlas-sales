@@ -1,0 +1,46 @@
+.cent-abs {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   margin: auto;
+}
+
+.cent-fl {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+}
+
+.fl-space-between {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -webkit-box-pack: justify;
+   -ms-flex-pack: justify;
+   justify-content: space-between;
+}
+
+
+.shadow {
+   box-shadow: 0px 10px 30px -10px rgba(0, 0, 0, 0.1);
+}
+
+.pointer {
+   @media (hover:hover) {
+       cursor: pointer;
+   }
+}
+
+.none {
+   display: none;
+}

@@ -1,1 +1,57 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'assets/fonts/fonts.scss';
+@import 'styles/variables.scss';
+@import 'styles/classes.scss';
+@import 'styles/typography.scss';
+
+
+/*#region RESET*/
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: "Open Sans", Arial, sans-serif;
+}
+
+body {
+   overflow-x: hidden;
+}
+
+ul {
+   list-style: none;
+}
+
+input,
+fieldset {
+   outline: 0;
+   border: 0;
+   background-color: unset;
+}
+
+table {
+   border-collapse: collapse;
+}
+
+/*#endregion RESET*/
+
+
+/*#region GLOBAL STYLES*/
+app-root {
+   min-height: 100vh;
+   display: grid;
+   grid-template-columns: max-content 1fr;
+   grid-template-rows: auto 1fr auto;
+
+   app-header,
+   app-footer {
+      grid-column: 1 / span 2;
+   }
+}
+
+header,
+main,
+aside,
+footer {
+   padding: 3vh 2.2vw;
+}
+
+/*#endregion GLOBAL STYLES*/
