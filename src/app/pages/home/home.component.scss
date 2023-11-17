@@ -1,0 +1,23 @@
+section { border: px solid dodgerblue;
+   position: relative;
+   padding: 4vh 9vw 6vh 6vw;
+}
+
+h2 {
+   margin-bottom: 2vh;
+}
+
+time {
+   position: absolute;
+   top: 5.4vh;
+   right: 9vw;
+   font-size: .7rem;
+   font-weight: 600;
+}
+
+p {
+   color: #222;
+   font-size: 1.1rem;
+   line-height: 1.5;
+   text-align: justify;
+}

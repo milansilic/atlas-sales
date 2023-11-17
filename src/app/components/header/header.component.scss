@@ -3,6 +3,7 @@ header { border: px solid dodgerblue;
    justify-content: space-between;
    align-items: center;
    background-color: #eee;
+   padding: 3vh 3vw 3vh 2.2vw;
 }
 
 picture { border: px solid red;
@@ -10,7 +11,7 @@ picture { border: px solid red;
    img {border: px solid pink;
       display: block;
       width: 100%;
-      transform: translate(-0.8rem, .3rem);
+      // transform: translate(-0.8rem, .3rem);
    }
 }
 
@@ -20,7 +21,8 @@ ul {
 
 li { border: px solid dodgerblue;
    padding: 1.2vh 1vw;
+   font-size: 1.3rem;
    text-align: center;
-   font-size: 1.4rem;
+   text-transform: capitalize;
    cursor: pointer;
 }

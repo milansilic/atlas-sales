@@ -16,6 +16,11 @@ body {
    overflow-x: hidden;
 }
 
+a {
+   color: unset;
+   text-decoration: none;
+}
+
 ul {
    list-style: none;
 }
@@ -45,13 +50,17 @@ app-root {
    app-footer {
       grid-column: 1 / span 2;
    }
+
+   app-header {
+      z-index: 2;
+      position: sticky;
+      top: 0;
+      align-self: start;
+   }
 }
 
-header,
-main,
-aside,
-footer {
-   padding: 3vh 2.2vw;
+main {
+   padding: 3vh 2.2vw 5vh;
 }
 
 /*#endregion GLOBAL STYLES*/

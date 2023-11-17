@@ -1,12 +1,20 @@
-aside {
+aside { 
    height: 100%;
    background-color: #c21a1a;
+   padding: 3vh 2.2vw;
+}
+
+ul {
+   position: sticky;
+   top: 8rem;
 }
 
 li {
    color: #fff;
-   font-size: 1.4rem;
+   font-size: 1.2rem;
    font-weight: 600;
-   padding: .5vh .4rem .5vh 0;
+   letter-spacing: .02rem;
+   padding: .7vh .2rem .7vh 0;
    text-transform: capitalize;
+   cursor: pointer;
 }
