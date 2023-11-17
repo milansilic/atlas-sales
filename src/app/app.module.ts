@@ -10,6 +10,8 @@ import { PackagesComponent } from './pages/packages/packages.component';
 import { AsideComponent } from './components/aside/aside.component';
 import { AccidentsComponent } from './pages/accidents/accidents.component';
 
+import { PackagesService } from './services/packages.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,7 @@ import { AccidentsComponent } from './pages/accidents/accidents.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [PackagesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

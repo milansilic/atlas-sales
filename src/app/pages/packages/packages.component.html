@@ -2,14 +2,16 @@
    <table>
       <tr>
          <th></th>
-         <th>paket</th>
-         <th>zemlja</th>
-         <th>cena</th>
+         <th>paket:</th>
+         <th>zemlja:</th>
+         <th>šlep:</th>
+         <th>cena:</th>
       </tr>
       <tr *ngFor="let p of packages">
          <td><img src="assets/img/{{p.img}}" alt=""></td>
          <td>{{ p.name }}</td>
          <td>{{ p.country }}</td>
+         <td>{{ p.tow }}</td>
          <td>{{ p.price | number }}</td>
       </tr>
    </table>

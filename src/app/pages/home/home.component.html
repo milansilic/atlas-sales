@@ -1,17 +1,7 @@
 <main>
-   <section>
-      <h2>Oboren rekord u prodaji Kombi max paketa</h2>
-      <time>23.11.2023.</time>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio nisi iusto libero distinctio doloremque ea quibusdam eligendi cupiditate aperiam corporis, illo, ratione sit ducimus sed esse omnis, velit pariatur sunt officiis sequi nostrum perspiciatis hic nihil? Sit ex veniam, sint labore illum dolor voluptate earum nisi vitae nam. Cupiditate, illum delectus voluptates eum temporibus, nisi autem quae est nulla amet deleniti repellat itaque omnis sapiente voluptatibus dolor voluptatem reiciendis exercitationem perspiciatis quibusdam alias. Sit, cum voluptate quod sint quidem pariatur omnis, quam in corrupti quis iure inventore dolores aliquam, beatae quo! Et, doloribus error quam aliquid veritatis eius iure velit a nihil eum praesentium tenetur dolor aperiam eos suscipit, illum temporibus voluptatem distinctio perspiciatis vitae animi, quasi amet. Laudantium voluptatem ea cupiditate quia ipsa. Quisquam incidunt voluptas sunt sapiente? Tempora dolorum neque hic numquam provident! Recusandae natus eius, qui tempora sunt iure ab dolor harum quod ratione rem quam et!</p>
-   </section>
-   <section>
-      <h2>Dan firme 30.12.2023.</h2>
-      <time>19.11.2023.</time>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio nisi iusto libero distinctio doloremque ea quibusdam eligendi cupiditate aperiam corporis, illo, ratione sit ducimus sed esse omnis, velit pariatur sunt officiis sequi nostrum perspiciatis hic nihil? Sit ex veniam, sint labore illum dolor voluptate earum nisi vitae nam. Cupiditate, illum delectus voluptates eum temporibus, nisi autem quae est nulla amet deleniti repellat itaque omnis sapiente voluptatibus dolor voluptatem reiciendis exercitationem perspiciatis quibusdam alias. Sit, cum voluptate quod sint quidem pariatur omnis, quam in corrupti quis iure inventore dolores aliquam, beatae quo! Et, doloribus error quam aliquid veritatis eius iure velit a nihil eum praesentium tenetur dolor aperiam eos suscipit, illum temporibus voluptatem distinctio perspiciatis vitae animi, quasi amet. Laudantium voluptatem ea cupiditate quia ipsa. Quisquam incidunt voluptas sunt sapiente? Tempora dolorum neque hic numquam provident! Recusandae natus eius, qui tempora sunt iure ab dolor harum quod ratione rem quam et!</p>
-   </section>
-   <section>
-      <h2>Počela sa radom Atlas-Sales aplikacija</h2>
-      <time>16.11.2023.</time>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio nisi iusto libero distinctio doloremque ea quibusdam eligendi cupiditate aperiam corporis, illo, ratione sit ducimus sed esse omnis, velit pariatur sunt officiis sequi nostrum perspiciatis hic nihil? Sit ex veniam, sint labore illum dolor voluptate earum nisi vitae nam. Cupiditate, illum delectus voluptates eum temporibus, nisi autem quae est nulla amet deleniti repellat itaque omnis sapiente voluptatibus dolor voluptatem reiciendis exercitationem perspiciatis quibusdam alias. Sit, cum voluptate quod sint quidem pariatur omnis, quam in corrupti quis iure inventore dolores aliquam, beatae quo! Et, doloribus error quam aliquid veritatis eius iure velit a nihil eum praesentium tenetur dolor aperiam eos suscipit, illum temporibus voluptatem distinctio perspiciatis vitae animi, quasi amet. Laudantium voluptatem ea cupiditate quia ipsa. Quisquam incidunt voluptas sunt sapiente? Tempora dolorum neque hic numquam provident! Recusandae natus eius, qui tempora sunt iure ab dolor harum quod ratione rem quam et!</p>
+   <section *ngFor="let n of news">
+      <h2>{{ n.title }}</h2>
+      <time>{{ n.date }}</time>
+      <p>{{ n.text }}</p>
    </section>
 </main>
