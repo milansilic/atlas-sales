@@ -17,6 +17,8 @@ import { TitleService } from './services/title.service';
 import { AccidentsService } from './services/accidents.service';
 import { PagesService } from './services/pages.service';
 import { PackageComponent } from './pages/package/package.component';
+import { VansComponent } from './pages/vans/vans.component';
+import { VanService } from './services/van.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { PackageComponent } from './pages/package/package.component';
     AsideComponent,
     AccidentsComponent,
     AssociatesComponent,
-    PackageComponent
+    PackageComponent,
+    VansComponent
   ],
   imports: [
     BrowserModule,
@@ -40,6 +43,7 @@ import { PackageComponent } from './pages/package/package.component';
     PagesService,
     PackagesService, 
     TitleService, 
+    VanService
   ],
   bootstrap: [AppComponent]
 })

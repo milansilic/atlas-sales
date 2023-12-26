@@ -1,0 +1,14 @@
+<main>
+   <table>
+      <tr ngClass="table-headers">
+         <th>model:</th>
+         <th>prazan:</th>
+         <th>pun:</th>
+      </tr>
+      <tr *ngFor="let v of vans">
+         <td>{{ v.model }}</td>
+         <td>{{ v.kerbWeight }}kg</td>
+         <td>{{ v.grossWeight }}kg</td>
+      </tr>
+   </table>
+</main>
