@@ -1,6 +1,7 @@
 table {
    font-size: 1rem;
    margin-bottom: 6vh;
+   cursor: pointer;
 
    tr:nth-of-type(even) {
       background-color: #f0f0f0;
@@ -25,7 +26,11 @@ table {
    }
 }
 
-picture {border: px solid red;
+picture {
    width: 61.6%;
    margin: 0 auto;
+}
+
+tr:first-of-type {
+   cursor: auto;
 }

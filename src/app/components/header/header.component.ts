@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 import { PagesService } from 'src/app/services/pages.service';
 import { TitleService } from 'src/app/services/title.service';
@@ -8,7 +8,10 @@ import { TitleService } from 'src/app/services/title.service';
    templateUrl: './header.component.html',
    styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit{
+export class HeaderComponent implements OnInit {
+
+
+
    title: string = 'početna';
    pages: object[] | any;
    expandItem: number = 0;
@@ -22,6 +25,12 @@ export class HeaderComponent implements OnInit{
    ngOnInit(): void {
       this.titleService.titleChanged.subscribe((tit: string) => this.title = tit)
       this.pages = this.pagesService.pages;
+   }
+
+   @HostListener('document:keydown', ['$event']) onkeydownhandler(event: KeyboardEvent) {
+      if (event.key === 'p') {this.router.navigate(['paketi'])}
+      else if (event.key === 's') {this.router.navigate(['saradnici'])}
+      else if (event.key === 'k') {this.router.navigate(['kombi'])}
    }
 
    nav(ind: any) {

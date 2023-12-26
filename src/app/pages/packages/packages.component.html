@@ -7,7 +7,7 @@
          <th>šlep:</th>
          <th>cena:</th>
       </tr>
-      <tr *ngFor="let p of packages">
+      <tr *ngFor="let p of packages; let i = index" (click)="nav(i)">
          <td><img src="assets/img/{{p.img}}" alt=""></td>
          <td>{{ p.name }}</td>
          <td>{{ p.territory }}</td>
