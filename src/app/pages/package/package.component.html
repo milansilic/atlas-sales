@@ -1,0 +1,15 @@
+<main>
+   <hgroup>
+      <h1>{{ package.fullName }}</h1>
+      <h2>{{ package.price }} RSD</h2>
+   </hgroup>
+   <picture><img src="assets/img/{{package.img}}" alt=""></picture>
+   <h3>pokriva teritoriju {{ package.coverTerritory }} sa {{ package.noOfAssists }} {{noOfAssists}}:</h3>
+   <article *ngFor="let a of package.assits; let i = index">
+      <h4>{{a.service}}</h4>
+      <ul>
+         <li *ngFor="let p of a.perks">&#10033; &nbsp; <span>{{p}}</span></li>
+      </ul>
+   </article>
+   <small>&#10066; &nbsp; {{package.note}}</small>
+</main>

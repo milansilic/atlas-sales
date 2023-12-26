@@ -1,0 +1,12 @@
+<main>
+   <table>
+      <tr ngClass="table-headers">
+         <th>grad:</th>
+         <th>saradnik:</th>
+      </tr>
+      <tr *ngFor="let a of associates">
+         <td>{{ a.city }}</td>
+         <td>{{ a.person }}</td>
+      </tr>
+   </table>
+</main>

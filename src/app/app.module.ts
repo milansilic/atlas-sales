@@ -11,6 +11,12 @@ import { AsideComponent } from './components/aside/aside.component';
 import { AccidentsComponent } from './pages/accidents/accidents.component';
 
 import { PackagesService } from './services/packages.service';
+import { AssociatesComponent } from './pages/associates/associates.component';
+import { AssociatesService } from './services/associates.service';
+import { TitleService } from './services/title.service';
+import { AccidentsService } from './services/accidents.service';
+import { PagesService } from './services/pages.service';
+import { PackageComponent } from './pages/package/package.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +26,21 @@ import { PackagesService } from './services/packages.service';
     FooterComponent,
     PackagesComponent,
     AsideComponent,
-    AccidentsComponent
+    AccidentsComponent,
+    AssociatesComponent,
+    PackageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [PackagesService],
+  providers: [
+    AccidentsService, 
+    AssociatesService, 
+    PagesService,
+    PackagesService, 
+    TitleService, 
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

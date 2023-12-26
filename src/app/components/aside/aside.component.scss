@@ -1,6 +1,6 @@
 aside { 
    height: 100%;
-   background-color: #c21a1a;
+   background-color: var(--red);
    padding: 3vh 2.2vw;
 }
 
@@ -11,10 +11,10 @@ ul {
 
 li {
    color: #fff;
-   font-size: 1.2rem;
-   font-weight: 600;
+   font-size: 1.3rem;
+   font-weight: bold;
    letter-spacing: .02rem;
-   padding: .7vh .2rem .7vh 0;
+   padding: 1vh .2rem 1vh 0;
    text-transform: capitalize;
    cursor: pointer;
 }

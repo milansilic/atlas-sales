@@ -30,9 +30,28 @@
    justify-content: space-between;
 }
 
+.table-headers th {
+   padding: .5rem 1vw;
+   background-color: var(--red);
+   color: var(--white);
+   font-size: 0.875rem;
+   font-weight: 900;
+   font-style: italic;
+   text-align: left;
+   text-transform: capitalize;   
+   text-decoration: underline;
+   letter-spacing: 0.05em;
+}
 
 .shadow {
    box-shadow: 0px 10px 30px -10px rgba(0, 0, 0, 0.1);
+}
+
+.center-abs {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
 }
 
 .pointer {

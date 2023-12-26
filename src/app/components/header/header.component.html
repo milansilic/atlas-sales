@@ -1,10 +1,17 @@
 <header>
    <picture><img src="assets/img/logo.webp" alt="logo"></picture>
-   <ul>
-      <li routerLink="home">početna</li>
-      <li routerLink="accidents">nezgode</li>
-      <li routerLink="packages">paketi</li>
-      <li>saradnici</li>
-      <li>FAQ</li>
+   <h1>{{ title }}</h1>
+   <ul #subUl>
+      <li 
+         *ngFor="let p of pages; let ind = index" 
+         ngClass="page" 
+         (click)="toggleSub(ind)" 
+         (mouseenter)="toggleSub(ind)"
+         (mouseleave)="hideSub()">
+            <a [routerLink]="p.page"> {{ p.page }}</a>
+            <ul *ngIf="expandItem == 2">
+               <li ngClass="subpage" *ngFor="let s of p.subpages; let i = index" (click)="nav(i)">{{ s }}</li>
+            </ul>
+      </li>
    </ul>
 </header>

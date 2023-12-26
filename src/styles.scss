@@ -3,17 +3,17 @@
 @import 'styles/classes.scss';
 @import 'styles/typography.scss';
 
-
 /*#region RESET*/
 * {
    box-sizing: border-box;
    margin: 0;
    padding: 0;
-   font-family: "Open Sans", Arial, sans-serif;
+   font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
 }
 
 body {
    overflow-x: hidden;
+   background-color: #fafafa;
 }
 
 a {
@@ -34,6 +34,21 @@ fieldset {
 
 table {
    border-collapse: collapse;
+}
+
+picture {
+   display: block;
+}
+
+picture img {
+   display: block;
+   width: 100%;
+   height: auto;
+}
+
+small {
+   font-size: .875rem;
+   font-weight: 900;
 }
 
 /*#endregion RESET*/
@@ -60,8 +75,11 @@ app-root {
 }
 
 main {
-   padding: 3vh 2.2vw 5vh;
-   padding: 4vh 10vw 6vh 7vw;
+   padding: 7vh 10vw 7vh 8vw;
+
+   &>table {
+      margin: 0 auto;
+   }
 }
 
 /*#endregion GLOBAL STYLES*/

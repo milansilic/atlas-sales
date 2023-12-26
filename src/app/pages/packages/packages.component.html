@@ -1,18 +1,21 @@
 <main>
    <table>
-      <tr>
+      <tr ngClass="table-headers">
          <th></th>
          <th>paket:</th>
-         <th>zemlja:</th>
+         <th>teritorija:</th>
          <th>šlep:</th>
          <th>cena:</th>
       </tr>
       <tr *ngFor="let p of packages">
          <td><img src="assets/img/{{p.img}}" alt=""></td>
          <td>{{ p.name }}</td>
-         <td>{{ p.country }}</td>
+         <td>{{ p.territory }}</td>
          <td>{{ p.tow }}</td>
-         <td>{{ p.price | number }}</td>
+         <td>{{ p.price }}</td>
       </tr>
    </table>
+   <picture>
+      <img src="assets/img/cene.jpg" alt="cene">
+   </picture>
 </main>

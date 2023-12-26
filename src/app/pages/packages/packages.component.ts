@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { PackagesService } from '../../services/packages.service'
 import { NoCommaPipe } from '../../pipes/decimal.pipe';
+import { TitleService } from 'src/app/services/title.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
    selector: 'app-packages',
@@ -10,10 +12,14 @@ import { NoCommaPipe } from '../../pipes/decimal.pipe';
 export class PackagesComponent implements OnInit{
    packages: object[] | any = []
 
-   constructor (private packagesService: PackagesService) {}
+   constructor (
+      private packagesService: PackagesService,
+      private route: ActivatedRoute,
+      private titleService: TitleService,
+   ) {}
 
    ngOnInit(): void {      
-      this.packages = this.packagesService.packages
+      this.packages = this.packagesService.packages;
+      this.titleService.titleChanged.emit(this.route.snapshot.url[0].path);
    }
-
 }
