@@ -31,6 +31,7 @@ export class HeaderComponent implements OnInit {
       if (event.key === 'p') {this.router.navigate(['paketi'])}
       else if (event.key === 's') {this.router.navigate(['saradnici'])}
       else if (event.key === 'k') {this.router.navigate(['kombi'])}
+      else if (event.key === 'n') {this.router.navigate(['nezgode'])}
    }
 
    nav(ind: any) {

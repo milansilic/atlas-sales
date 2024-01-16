@@ -14,9 +14,42 @@ hgroup {
    margin-bottom: 1vw;
 }
 
-picture {
+figure {
    grid-column: 2 / 3;
    grid-row: 1 / 7;
+}
+
+#controls {
+   display: flex;
+   justify-content: center;
+
+   span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem .3rem;
+      margin: 2rem .6rem;
+      transition: .2s ease-out;
+      cursor: pointer;
+
+      &:hover {
+         background-color: #f6f6f6;
+      }
+
+      &:nth-of-type(2) {
+         transform: rotate(180deg);
+      }
+
+      img {
+         display: block;
+         width: 10vh;
+         filter: drop-shadow(2px 2px 9px rgb(0 0 0 / .1));
+
+         &:nth-of-type(2) {
+            filter: drop-shadow(-2px -2px 9px rgb(0 0 0 / .1));
+         }
+      }
+   }
 }
 
 h3 {
