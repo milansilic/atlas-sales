@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AgmCoreModule } from '@agm/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -35,7 +36,10 @@ import { VanService } from './services/van.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    // AgmCoreModule.forRoot({
+    //   apiKey: 'AIzaSyDYGzqJSoHdMlm3WY_HRskjJS8L2Hg2ECI'
+    // })
   ],
   providers: [
     AccidentsService, 
