@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AgmCoreModule } from '@agm/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +20,7 @@ import { PackageComponent } from './pages/package/package.component';
 import { VansComponent } from './pages/vans/vans.component';
 import { VanService } from './services/van.service';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,10 +36,7 @@ import { VanService } from './services/van.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    // AgmCoreModule.forRoot({
-    //   apiKey: 'AIzaSyDYGzqJSoHdMlm3WY_HRskjJS8L2Hg2ECI'
-    // })
+    AppRoutingModule
   ],
   providers: [
     AccidentsService, 
