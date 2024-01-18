@@ -2,6 +2,7 @@
 @import 'styles/variables.scss';
 @import 'styles/classes.scss';
 @import 'styles/typography.scss';
+@import "~leaflet/dist/leaflet.css";
 
 /*#region RESET*/
 * {
@@ -83,3 +84,23 @@ main {
 }
 
 /*#endregion GLOBAL STYLES*/
+
+html,
+body {
+   height: 100%;
+}
+
+body {
+   margin: 0;
+   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.leaflet-tooltip {
+   padding: 1px 2px;
+
+}
+
+.leaflet-tooltip-bottom {
+   margin-top: 20px;
+   margin-left: 1px;
+}

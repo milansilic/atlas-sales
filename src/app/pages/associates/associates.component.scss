@@ -1,3 +1,20 @@
-td { border: 1px solid var(--dark-grey);
+td {
+   border: 1px solid var(--dark-grey);
    padding: .2vw 1vw;
+}
+
+.map-container {
+   height: 2000px;
+   margin-bottom: 14vh;
+}
+
+.map-frame,
+#map {
+   height: 100%;
+   z-index: 0;
+}
+
+.text-below-marker { border: 12px solid saddlebrown !important;
+   background-color: aquamarine !important;
+   margin: 0 !important;
 }

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +20,7 @@ import { PagesService } from './services/pages.service';
 import { PackageComponent } from './pages/package/package.component';
 import { VansComponent } from './pages/vans/vans.component';
 import { VanService } from './services/van.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -36,7 +38,9 @@ import { VanService } from './services/van.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    LeafletModule
   ],
   providers: [
     AccidentsService, 
